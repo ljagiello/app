@@ -192,7 +192,7 @@ $config['optimizely'] = array(
 $config['jquery'] = array(
 	'type' => AssetsManager::TYPE_JS,
 	'assets' => array(
-		'#function_AssetsConfig::getJQueryUrl'
+		//'#function_AssetsConfig::getJQueryUrl'
 	)
 );
 
