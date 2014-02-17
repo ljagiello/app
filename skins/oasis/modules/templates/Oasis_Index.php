@@ -130,6 +130,7 @@ if (!$wg->DevelEnvironment):?>
 	?>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
 <? if( $jsAtBottom ): ?>
 	<!--[if lt IE 8]>
 		<script src="<?= $wg->ResourceBasePath ?>/resources/wikia/libraries/json2/json2.js"></script>
