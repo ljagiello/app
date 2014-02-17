@@ -139,6 +139,8 @@ $config['oasis_noads_extensions_js'] = array(
 		'//extensions/wikia/VideoEmbedTool/js/VET_Loader.js',
 		// Survey for first time editors
 		'//extensions/wikia/EditorSurvey/js/EditorSurvey.js',
+		// Image and video thumbnail mustache templates
+		'//extensions/wikia/Thumbnails/scripts/templates.mustache.js',
 	)
 );
 
@@ -512,7 +514,9 @@ $config['wikiamobile_js_body_full'] = array(
 		//polyfills
 		'//extensions/wikia/WikiaMobile/js/viewport.js',
 
+		//libraries
 		'//resources/wikia/libraries/iScroll/iscroll.js',
+		'//extensions/wikia/WikiaMobile/js/webview.js',
 
 		//platform components
 		'//extensions/wikia/AssetsManager/js/AssetsManager.js',
@@ -797,6 +801,14 @@ $config['relatedpages_js'] = array(
 		'//resources/wikia/libraries/sloth/sloth.js',
 		'//resources/wikia/libraries/mustache/mustache.js',
 		'//extensions/wikia/RelatedPages/js/RelatedPages.js'
+	)
+);
+
+$config['relatedpages_wikiamobile_js'] = array(
+	'type' => AssetsManager::TYPE_JS,
+	'skin' => [ 'wikiamobile' ],
+	'assets' => array(
+		'//extensions/wikia/RelatedPages/js/relatedPages.wikiamobile.js'
 	)
 );
 
@@ -1615,3 +1627,19 @@ $config['api_docs_scss'] = array(
 		'//extensions/wikia/ApiDocs/css/ApiDocs.scss',
 	)
 );
+
+$config['videos_module_js'] = [
+	'type' => AssetsManager::TYPE_JS,
+	'skin' => ['oasis'],
+	'assets' => [
+		'//extensions/wikia/Thumbnails/scripts/templates.mustache.js',
+		'//extensions/wikia/Thumbnails/scripts/views/titleThumbnail.js',
+
+		'//extensions/wikia/VideosModule/scripts/templates.mustache.js',
+		'//extensions/wikia/VideosModule/scripts/models/abTestBottom.js',
+		'//extensions/wikia/VideosModule/scripts/models/videos.js',
+		'//extensions/wikia/VideosModule/scripts/views/titleThumbnail.js',
+		'//extensions/wikia/VideosModule/scripts/views/bottomModule.js',
+		'//extensions/wikia/VideosModule/scripts/controllers/index.js',
+	]
+];

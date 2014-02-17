@@ -540,6 +540,7 @@ include_once( "$IP/extensions/wikia/SpecialUnusedVideos/SpecialUnusedVideos.setu
 include_once( "$IP/extensions/wikia/ArticleSummary/ArticleSummary.setup.php" );
 include_once( "$IP/extensions/wikia/FilePage/FilePage.setup.php" );
 include_once( "$IP/extensions/wikia/CityVisualization/CityVisualization.setup.php" );
+include_once( "$IP/extensions/wikia/Thumbnails/Thumbnails.setup.php" );
 
 /**
  * @name $wgSkipSkins
@@ -1295,3 +1296,12 @@ $wgSFlowPort = 36343;
 $wgSFlowSampling = 1;
 
 $wgAutoloadClasses[ 'Wikia\\SFlow'] = "$IP/lib/vendor/SFlow.class.php";
+
+/**
+ * Enables ETag globally
+ *
+ * @see http://www.mediawiki.org/wiki/Manual:$wgUseETag
+ *
+ * $wgUseETag is a core MW variable initialized in includes/DefaultSettings.php
+ */
+$wgUseETag = true;
