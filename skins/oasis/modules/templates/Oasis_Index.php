@@ -129,6 +129,7 @@ if (!$wg->DevelEnvironment):?>
 		echo F::app()->renderView('Ad', 'Index', array('slotname' => 'SEVENONEMEDIA_FLUSH'));
 	?>
 </div>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
 <? if( $jsAtBottom ): ?>
